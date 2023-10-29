@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header>
+        <img src="/src/logo5.svg" alt="logo">
+        <p>ZaPa Online</p>
+    </header>
+
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="/contacto.html">Contacto</a>
+        <a href="http://">Sobre Nosotros</a>
+    </nav>
+    
+    <form>
+
+        <label for="nombre" class="label-contacto">Nombre</label>
+        <input type="text" id="nombre" class="input-padron" required>
+        
+        <label for="apellido" class="label-contacto">Apellido</label>
+        <input type="text" id="apellido" class="input-padron" required>
+        
+        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="fechaNacimiento" class="input-padron">
+        
+        <label for="correoelectronico" class="label-contacto">Correo Electrónico</label>
+        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+        <label for="telefono" class="label-contacto">Teléfono</label>
+        <input type="tel" id="telefono" class="input-padron" required placeholder="362-4000000">
+
+        <label for="mensaje" class="label-contacto">Mensaje</label>
+        <textarea id="mensaje" cols="70" rows="5" class="input-padron" placeholder="¿Cuál es tu consulta?" required></textarea>
+
+        <label for="myfile">Si el producto tiene fallas, subi una foto</label>
+        <input type="file" id="myfile" class="input-padron" multiple>
+
+
+        <fieldset>
+
+            <legend>¿Cómo te gustaría que te contactemos?</legend>
+
+            <label for="radio-whatsapp"><input type="radio" name="contacto" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+
+            <label for="radio-email"><input type="radio" name="contacto" value="Email" id="radio-email">Email</label>
+            
+            <label for="radio-telefono"><input type="radio" name="contacto" value="Telefono" id="radio-telefono">Teléfono</label>
+            
+        </fieldset>
+
+        <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades?</label>
+        <input type="submit" name="contacto" value="ENVIAR" class="enviar">
+        <input type="reset" name="reset" value="Borrar">
+            
+
+    </form>
+
+    <footer>
+        <a href="/index.html"><img src="/src/logo5.svg" alt="logo" style="height: 30px;"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="/src/instagram_logo_icon_257003.ico" alt="icono instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="/src/facebook_logo_icon_257007.ico" alt="icono facebook"></a>
+    </footer>
+
+</body>
+</html>

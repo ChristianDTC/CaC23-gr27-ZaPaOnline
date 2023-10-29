@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-size: 10vw*/
+    font-size: 16px;
+    color: white;
+}
+
+
+body{
+    background-image: url(../src/bg.jpg);
+}
+
+
+header{
+   background-color: black;
+   padding: 1.5rem 0;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   
+}
+header p {
+    color: white;
+    margin-left: 2rem;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+
+nav{
+    display: flex;
+    margin: 0.5rem 0;
+    justify-content: space-around;
+}
+nav a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    justify-content: space-evenly
+    /*grid-column: 1/5;
+    digo cuanto ocupa la columna*/
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+form label, input, fieldset, legend{
+    font-size: 1.3rem;
+}
+form input, textarea{
+    color: black;
+    margin-bottom:1rem;
+}
+#myfile {
+    color: white;
+}
+form fieldset{
+    margin-bottom: 1rem;
+}
+
+
+
+footer{
+    text-align: center;
+    margin: 0.5rem auto;
+}
+footer img{
+    height: 2rem;
+}
