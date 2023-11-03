@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos/estilos.css">
-    <title>Contacto</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="description" content="Página Web de ZaPa Online, donde se pueden realizar pedidos y compras de zapatillas y zapatos"><!-- esta descripción es la que se ve en el buscador -->
+    
+        <!-- OPEN GRAPH, como se muestra si quiero compartir en una red social -->
+        <meta property="og:title" content="ZaPa Online">
+        <meta property="og:description" content="Página Web de ZaPa Online, donde se pueden realizar pedidos y compras de zapatillas y zapatos">
+        <meta property="og:image" content="/src/logo5.svg">
+        
+    
+        <link rel="icon" href="/src/logo5.svg" type="image/x-icon" > <!-- genera el icono de la página -->
+        <link rel="stylesheet" href="/estilos/estilos.css">
+        
+        <title>Contacto</title>
+    </head>
 <body>
 
     <header>
-        <img src="/src/logo5.svg" alt="logo">
+        <img src="/src/logo5.svg" alt="logo" title="ZaPa Online">
         <p>ZaPa Online</p>
     </header>
 
     <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="/contacto.html">Contacto</a>
-        <a href="http://">Sobre Nosotros</a>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+            <li><a href="http://">Sobre Nosotros</a></li>
+        </ul>
     </nav>
+
+    <h1 class="tituloFormulario">Formulario de Contacto</h1>
     
-    <form>
+    <form method="post" action="/">
 
         <label for="nombre" class="label-contacto">Nombre</label>
         <input type="text" id="nombre" class="input-padron" required>
@@ -34,14 +49,16 @@
         <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
         <label for="telefono" class="label-contacto">Teléfono</label>
-        <input type="tel" id="telefono" class="input-padron" required placeholder="362-4000000">
+        <input type="tel" id="telefono" class="input-padron" required placeholder="362-4000000" pattern="[0-9]{10}"><!-- el patter establece que el campo tiene que ser del 0 al 9 y un largo de 10 dígitos -->
 
         <label for="mensaje" class="label-contacto">Mensaje</label>
         <textarea id="mensaje" cols="70" rows="5" class="input-padron" placeholder="¿Cuál es tu consulta?" required></textarea>
 
-        <label for="myfile">Si el producto tiene fallas, subi una foto</label>
-        <input type="file" id="myfile" class="input-padron" multiple>
-
+        <details>
+            <summary>Producto con fallas</summary>
+            <p for="myfile">Si el producto tiene fallas, envia una foto.</p>
+            <input type="file" id="myfile" class="input-padron" multiple>
+        </details><!-- el details genera el despligable -->
 
         <fieldset>
 
@@ -58,14 +75,14 @@
         <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades?</label>
         <input type="submit" name="contacto" value="ENVIAR" class="enviar">
         <input type="reset" name="reset" value="Borrar">
-            
 
     </form>
 
     <footer>
-        <a href="/index.html"><img src="/src/logo5.svg" alt="logo" style="height: 30px;"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="/src/instagram_logo_icon_257003.ico" alt="icono instagram"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="/src/facebook_logo_icon_257007.ico" alt="icono facebook"></a>
+        <a href="/index.html"><img src="/src/logo5.svg" alt="logo zapa online" title="ZaPa Online"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="/src/instagram_logo_icon_257003.ico" alt="icono instagram" title="Instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="/src/facebook_logo_icon_257007.ico" alt="icono facebook" title="Facebook"></a>
+        <a href="https://api.whatsapp.com/send?phone=+543624686501&text=Hola, quiero info de un producto"><img src="/src/whatsapp_logo_icon_257004.png" alt="logo whatsapp" title="Whatsapp"></a>
     </footer>
 
 </body>
